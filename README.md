@@ -5,7 +5,7 @@
 
 ## After install ROS
 ### Build up an enviroment for operating program 
-Because you need to operate code in ROS format, use catkin_make is the common way to build a enviroment for ROS to read your program's file. So we often create enviroment dir as catkin_ws.  
+Because you need to operate code in ROS format, catkin_make is the common way to build a enviroment for ROS to read your program's file. So we often create enviroment folder called catkin_ws.  
 ### 1. mkdir -p ~/catkin_ws/src
 ### 2. cd ~/catkin_ws 
 ### 3. catkin_make
@@ -33,4 +33,5 @@ Start rviz(virtualize simulation software)
 Then you can start to use python or c++ to control robot arm through MOVEIT library.  
 (P.S. In this step, you have to use "chmod +x x.py" to make x.py follow ROS format.)
 
-/ur5_moveit_config/config/ur5.srdf
+Example: http://docs.ros.org/indigo/api/moveit_tutorials/html/doc/pr2_tutorials/planning/scripts/doc/move_group_python_interface_tutorial.html  
+And you can find the group name from "/ur5_moveit_config/config/ur5.srdf".(https://github.com/ros-industrial/universal_robot/blob/93ba9e5e7090d07ef1c610daa33aba2012100ace/ur5_moveit_config/config/ur5.srdf)
