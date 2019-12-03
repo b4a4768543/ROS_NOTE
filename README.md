@@ -15,5 +15,5 @@ Start path planning software, and limited constrain that robot do not have colli
 Start rviz(virtualize simulation software)
 
 ### 5. rosrun pkg x.py
-Then you can start to use python or c++ to control robot arm through MOVEIT library
-In this step, you have to use "chmod +x x.py" to make x.py follow ROS format.
+Then you can start to use python or c++ to control robot arm through MOVEIT library.
+(P.S. In this step, you have to use "chmod +x x.py" to make x.py follow ROS format.)
