@@ -24,10 +24,10 @@ So you need to modify ~/ur_modern_driver/src/ur_hardware_interface.cpp
 Open ur_hardware_interface.cpp and replace all "->hardware_interface" by "->type".
   
 ### 3. roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=True
-Start path planning software, and limited constrain that robot do not have collision
+Start path planning software, and "limited:=True" constrain robot not to collide.
 
 ### 4. roslaunch ur10_moveit_config moveit.rviz
-Start rviz(virtualize simulation software)
+Start rviz, virtualize simulation software.
 
 ### 5. rosrun pkg x.py
 Then you can start to use python or c++ to control robot arm through MOVEIT library.  
