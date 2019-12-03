@@ -3,7 +3,17 @@
 ## Install ROS
 
 
-### After install ROS
+## After install ROS
+### Build up an enviroment for operating program 
+Because you need to operate code in ROS format, use catkin_make is the common way to build a enviroment for ROS to read your program's file. So we often create enviroment dir as catkin_ws.  
+### 1. mkdir -p ~/catkin_ws/src
+### 2. cd .. 
+### 3. catkin_make
+This will create an enviroment catkin_ws with three folder "build","devel" and "src".  
+#### src: put all pkg(from github) you need to this folder, 
+#### then back to "~/catkin_ws" and execute "catkin_make", 
+#### it let ROS to detect how many pkg you have, so you can directly use rosrun or roslaunch to execute file in this pkg.
+
 ## Control Universal Robot 10
 Run the following code:
 ### 1. roscore
@@ -13,7 +23,7 @@ This step is to connect to the Universal robot.
   
 Problem: If you use Ubuntu16 and catkin_make ur_modern_driver, it will show error.  
 So you need to modify ~/ur_modern_driver/src/ur_hardware_interface.cpp  
-Open ur_hardware_interface.cpp and replace all hardware_interface by type.
+Open ur_hardware_interface.cpp and replace all "hardware_interface" by "type".
   
 ### 3. roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=True
 Start path planning software, and limited constrain that robot do not have collision
