@@ -7,12 +7,10 @@
 ### Build up an enviroment for operating program 
 Because you need to operate code in ROS format, use catkin_make is the common way to build a enviroment for ROS to read your program's file. So we often create enviroment dir as catkin_ws.  
 ### 1. mkdir -p ~/catkin_ws/src
-### 2. cd .. 
+### 2. cd ~/catkin_ws 
 ### 3. catkin_make
 This will create an enviroment catkin_ws with three folder "build","devel" and "src".  
-#### src: put all pkg(from github) you need to this folder, 
-#### then back to "~/catkin_ws" and execute "catkin_make", 
-#### it let ROS to detect how many pkg you have, so you can directly use rosrun or roslaunch to execute file in this pkg.
+#### src: put all pkg(from github) you need to this folder, then back to "~/catkin_ws" and execute "catkin_make" (whenever you put one, you need to execute once). It let ROS detect how many pkg you have, so you can directly use rosrun or roslaunch to execute file in this pkg.
 
 ## Control Universal Robot 10
 Run the following code:
