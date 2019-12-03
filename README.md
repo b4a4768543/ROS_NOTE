@@ -16,8 +16,8 @@ This will create an enviroment catkin_ws with three folder "build","devel" and "
 Run the following code:
 ### 1. roscore
 ### 2. roslaunch ur_modern_driver ur10_bringup.launch robot_ip:=$ROBOT_IP
+(replace "$ROBOT_IP" to IP of ur10 or ur5 like 192.168.2.1)  
 This step is to connect to the Universal robot.  
-(roslaunch -> pkg -> file -> replace "$ROBOT_IP" to IP of ur10 or ur5 like 192.168.2.1)  
   
 Problem: If you use Ubuntu16 and catkin_make ur_modern_driver, it will show error.  
 So you need to modify ~/ur_modern_driver/src/ur_hardware_interface.cpp  
