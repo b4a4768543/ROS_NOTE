@@ -21,7 +21,7 @@ This step is to connect to the Universal robot.
   
 Problem: If you use Ubuntu16 and catkin_make ur_modern_driver, it will show error.  
 So you need to modify ~/ur_modern_driver/src/ur_hardware_interface.cpp  
-Open ur_hardware_interface.cpp and replace all "hardware_interface" by "type".
+Open ur_hardware_interface.cpp and replace all "->hardware_interface" by "->type".
   
 ### 3. roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=True
 Start path planning software, and limited constrain that robot do not have collision
