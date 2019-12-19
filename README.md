@@ -26,7 +26,7 @@ Open ur_hardware_interface.cpp and replace all "->hardware_interface" by "->type
 ### 3. roslaunch ur10_moveit_config ur10_moveit_planning_execution.launch limited:=True
 Start path planning software, and "limited:=True" constrain robot not to collide.
 
-### 4. roslaunch ur10_moveit_config moveit.rviz
+### 4. roslaunch ur10_moveit_config moveit_rviz.launch
 Start rviz, virtualize simulation software.
 
 ### 5. rosrun pkg x.py
